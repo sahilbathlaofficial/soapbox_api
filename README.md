@@ -1,6 +1,7 @@
 # SoapboxApi
 
-TODO: Write a gem description
+This provides an API for accessing Soapbox's feature such as extracting posts or composing posts from 
+a 3rd Party Application
 
 ## Installation
 
@@ -18,7 +19,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Being a initial API library I have only added one functionality to fetch posts. So once you have your consumer key and secret from your soapBox app, add the following in your controller file. i.e:-
+
+class UsersController < ApplicationController
+  def index
+    token = { consumer_key: 'YOUR_KEY', consumer_secret: 'YOUR_Secret' }
+    client = SoapboxApi::UsersPosts.new(token)
+    render text: client.fetch_posts
+  end
+end
+
 
 ## Contributing
 
