@@ -21,6 +21,7 @@ Or install it yourself as:
 
 Being a initial API library I have only added one functionality to fetch posts. So once you have your consumer key and secret from your soapBox app, add the following in your controller file. i.e:
 
+```ruby
 class UsersController < ApplicationController
   def index
     token = { consumer_key: 'YOUR_KEY', consumer_secret: 'YOUR_Secret' }
@@ -28,6 +29,7 @@ class UsersController < ApplicationController
     render text: client.fetch_posts
   end
 end
+```
 
 
 ## Contributing
