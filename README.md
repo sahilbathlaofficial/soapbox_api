@@ -19,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-Being a initial API library I have only added one functionality to fetch posts. So once you have your consumer key and secret from your soapBox app, add the following in your controller file. i.e:-
+Being a initial API library I have only added one functionality to fetch posts. So once you have your consumer key and secret from your soapBox app, add the following in your controller file. i.e:
 
 class UsersController < ApplicationController
   def index
